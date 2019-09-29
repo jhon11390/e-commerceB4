@@ -34,8 +34,8 @@
     <div class="row">
       <div class="col-3">
         <div class="row">
-          <div class="col-auto">
-            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+          <div class="col">
+            <label class="sr-only" for="inlineFormInputGroup">Busqueda</label>
             <div class="input-group mb-2">
               <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar camiseta">
               <div class="input-group-prepend">
@@ -124,15 +124,62 @@
           </div>
         </div>
         <div class="row pt-4">
-
+          <!-- Camiseta 1 -->
           <div class="col-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Hipster Ultimate</h5>
                 <p class="card-text">La camiseta ideal para hipsters.</p>
-                <a href="#" class="btn btn-primary">229 <i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="btn btn-default" type="button">Detalles</a>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
+                <!-- Boton modal camiseta 1-->
+                <a href="#" class="btn btn-default" type="button" data-toggle="modal" data-target="#exampleModal">Detalles</a>
+                <!-- Modal camiseta 1-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hipster Uitimate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="alert alert-info" role="alert">
+                          Este producto esta agotado
+                        </div>
+
+                        <!-- Desscripcion y comentarios -->
+                        <nav>
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tempore nesciunt aliquid voluptatum debitis obcaecati. Blanditiis reprehenderit soluta eius commodi, voluptatem nihil esse consequatur laudantium maxime fuga sed nemo hic.</div>
+                          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action active">
+                                Cras justo odio
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            </div>
+                            <div class="form-group">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -143,7 +190,7 @@
               <div class="card-body">
                 <h5 class="card-title">On Motion Live</h5>
                 <p class="card-text">Perfecta para salidas rocosas.</p>
-                <a href="#" class="btn btn-primary">229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="btn btn-default" type="button">Detalles</a>
               </div>
             </div>
@@ -155,7 +202,7 @@
               <div class="card-body">
                 <h5 class="card-title">Underground Max</h5>
                 <p class="card-text">Para los amantes del underground.</p>
-                <a href="#" class="btn btn-primary">229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="btn btn-default" type="button">Detalles</a>
               </div>
             </div>
@@ -167,7 +214,7 @@
               <div class="card-body">
                 <h5 class="card-title">Santo Domingo Tigers</h5>
                 <p class="card-text">En honor en este gran equipo.</p>
-                <a href="#" class="btn btn-primary">229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="btn btn-default" type="button">Detalles</a>
               </div>
             </div>
@@ -179,7 +226,7 @@
               <div class="card-body">
                 <h5 class="card-title">Una Camiseta Mas</h5>
                 <p class="card-text">Nunca sobra una asi cool.</p>
-                <a href="#" class="btn btn-primary">229 <i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="btn btn-primary">$229 <i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="btn btn-default" type="button">Detalles</a>
               </div>
             </div>
